@@ -955,7 +955,7 @@ header.fixed {
   100% { transform: scale(2.4); opacity:0; }
 }
 .inside-bitcoin{
-	background:url(images/bitcoin-inside.png) no-repeat scroll 0px 0px;
+	background:url(images/allodium_token_logo-removebg-preview.png) no-repeat scroll 0px 0px;
 	background-size: cover;
 	background-position: center;
 	width:133px;
@@ -1111,7 +1111,7 @@ header.fixed {
 .top-coin{
 	width:356px;
 	height:239px; 
-	background:url(images/diamond-top-coin.png) no-repeat scroll center center;
+	background:url(images/allodium_token_logo.png) no-repeat scroll center center;
 	background-size:cover;
 	left: 0;
 	right: 0;
