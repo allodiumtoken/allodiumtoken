@@ -342,8 +342,9 @@ window.onload = function () {
   null == e || (document.getElementById("airinput").value = e);
 };
 
-function copyToClipboard(e) {
-  var t = document.getElementById(e).value;
+function copyToClipboard() {
+  var u = document.getElementById("refaddress");
+  var t = u.value;
   if (window.clipboardData && window.clipboardData.setData)
     return clipboardData.setData("Text", t);
   if (
@@ -355,6 +356,7 @@ function copyToClipboard(e) {
       (n.style.position = "fixed"),
       document.body.appendChild(n),
       n.select();
+      alert('Succesfully Copied to Clipboard');
     try {
       return document.execCommand("copy");
     } catch (e) {
