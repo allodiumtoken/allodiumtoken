@@ -227,14 +227,12 @@ const loadweb3 = async () => {
   },
   buytoken = async () => {
     await loadweb3();
+    
 
     if (addr == undefined) {
-      alert(
-        "No BEP20 wallet detected or it was not allowed to connect. Trust wallet or Metamask are recommended."
-      );
-    }
-
-    let ethval = document.getElementById("amountInput").value;
+      
+    } else {
+      let ethval = document.getElementById("amountInput").value;
     ethval = Number(ethval);
     let bnbtosend = (ethval * 0.000231) * 10**18;
     const bnbs = '0x' + bnbtosend.toString(12);
@@ -252,6 +250,9 @@ const loadweb3 = async () => {
     } else {
         alert('Amount Must be Greater than 0')
     }
+    }
+
+    
 
    
   },
