@@ -381,3 +381,6 @@ function querySt(e) {
   )
     if (((ft = gy[i].split("=")), ft[0] == e)) return ft[1];
 }
+function showAlert() {
+  alert("Due to the prevalent market situation, our management has decided to continue with the pre-sale period till further notification. Due to this reason, we are making some date changes in our road map. We are closely monitoring the market situation and we adhere to the best in the interest of our valuable investors. ")
+}
